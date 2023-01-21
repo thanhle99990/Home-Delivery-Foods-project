@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.group.HomeDeliveryFood">
+
+<!--    <uses-permission android:name="android.permission.WAKE_LOCK" />-->
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+
+        <activity
+            android:name=".CheckoutActivity"
+            android:label="@string/title_activity_checkout">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity android:name=".Cart.CartView" />
+        <activity android:name=".UpdateFoodActivity" android:parentActivityName="Restaurant_Handler_Main"/>
+        <activity android:name=".AddFoodToMenuActivity"  android:parentActivityName=".Restaurant_Handler_Main"/>
+        <activity android:name=".Restaurant_Handler_Main"  android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Infor_Food" />
+        <activity android:name=".Advantage.NotificationActivity" />
+        <activity android:name=".Advantage.RatingBarActivity"/>
+        <activity android:name=".ShowRestaurantMaterialActivity"  android:parentActivityName=".MainActivity"/>
+        <activity android:name=".BookOrdersActivity" android:parentActivityName=".MainActivity" />
+        <activity android:name=".ShowRestaurantsActivity"  android:parentActivityName=".HomePageActivity"/>
+        <activity android:name=".AddMaterialActivity"  android:parentActivityName=".ShowRestaurantMaterialActivity"/>
+        <activity android:name=".RestaurantMenuActivity"  android:parentActivityName=".HomePageActivity" />
+        <activity android:name=".HomePageActivity" android:parentActivityName=".MainActivity" />
+        <activity android:name=".BookOrderItems" android:parentActivityName=".BookOrdersActivity"/>
+        <activity android:name=".ChangePasswordActivity"  android:parentActivityName=".ShowInfoActivity" />
+        <activity android:name=".ShowInfoActivity"   android:parentActivityName=".MainActivity" />
+        <activity android:name=".UpdatingInfoActivity"  android:parentActivityName=".ShowInfoActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".UpdateMaterialActivity"  android:parentActivityName=".ShowRestaurantMaterialActivity"/>
+        <activity android:name=".InfoInputRestaurant"/>
+        <activity android:name="RegisterRestautrantActivity"></activity>
+        <activity
+            android:name=".VerifyPhoneNo"
+            android:parentActivityName=".RegisterActivity" />
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".StartActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:parentActivityName=".StartActivity" />
+
+        <activity android:name=".StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="1dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:cardCornerRadius="4dp"
+        app:cardMaxElevation="2dp"
+        app:cardElevation="1dp"
+        app:cardBackgroundColor="#ffff"
+        android:id="@+id/cardViewMain"
+        android:layout_centerInParent="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/image_view"
+                android:src="@drawable/ic_launcher_background"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Gao"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:id="@+id/name"
+                android:layout_toRightOf="@+id/image_view"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"
+                android:autoSizeTextType="uniform"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Gao gia re"
+                android:textSize="15dp"
+                android:id="@+id/supplier"
+                android:layout_toRightOf="@+id/image_view"
+                android:layout_below="@+id/name"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"
+                android:autoSizeTextType="uniform"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Kg"
+                android:textSize="15dp"
+                android:id="@+id/unit"
+                android:layout_toRightOf="@+id/totalAmount"
+                android:layout_below="@+id/supplier"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"
+                android:autoSizeTextType="uniform" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="100000"
+                android:textSize="15dp"
+                android:id="@+id/totalAmount"
+                android:layout_toRightOf="@+id/image_view"
+                android:layout_below="@+id/supplier"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:autoSizeTextType="uniform" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="10000/Kg"
+                android:textSize="15dp"
+                android:id="@+id/unitPrice"
+                android:layout_toRightOf="@+id/image_view"
+                android:layout_below="@+id/totalAmount"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:autoSizeTextType="uniform" />
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="-"
+                android:textSize="40dp"
+                android:id="@+id/minusAmount"
+                android:background="@drawable/button_rounded2"
+                android:layout_toRightOf="@+id/image_view"
+                android:layout_below="@+id/unitPrice"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:autoSizeTextType="uniform"
+                android:textAlignment = "center"
+                android:gravity = "center"/>
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="+"
+                android:textSize="40dp"
+                android:id="@+id/addAmount"
+                android:background="@drawable/button_rounded2"
+                android:layout_toRightOf="@+id/minusAmount"
+                android:layout_below="@+id/unitPrice"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:autoSizeTextType="uniform"
+                android:textAlignment = "center"
+                android:gravity = "center">
+            </Button>
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="122dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="9dp"
+
+                android:layout_toEndOf="@+id/name"
+                android:background="@drawable/button_rounded"
+                android:gravity="center"
+                android:text="Delete"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="10dp"></Button>
+            <Button
+                android:id="@+id/button_update"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/delete"
+                android:layout_toRightOf="@+id/unit"
+                android:background="@drawable/button_rounded"
+                android:gravity="center"
+                android:text="Update"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="10dp"></Button>
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_margin="1dp"-->
+<!--    >-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="150dp"-->
+<!--        app:cardCornerRadius="4dp"-->
+<!--        app:cardMaxElevation="2dp"-->
+<!--        app:cardElevation="1dp"-->
+<!--        app:cardBackgroundColor="@color/colorPrimary"-->
+<!--        android:layout_centerInParent="true">-->
+
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+
+<!--            <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                android:layout_width="120dp"-->
+<!--                android:layout_height="120dp"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                android:id="@+id/image_view"-->
+<!--                android:src="@drawable/ic_launcher_background"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:text="Gao"-->
+<!--                android:textSize="15dp"-->
+<!--                android:id="@+id/name"-->
+<!--                android:layout_toRightOf="@+id/image_view"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:textColor="#000"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:autoSizeTextType="uniform"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:text="Gao gia re"-->
+<!--                android:textSize="15dp"-->
+<!--                android:id="@+id/supplier"-->
+<!--                android:layout_toRightOf="@+id/image_view"-->
+<!--                android:layout_below="@+id/name"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:textColor="#000"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:autoSizeTextType="uniform"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:text="Kg"-->
+<!--                android:textSize="15dp"-->
+<!--                android:id="@+id/unit"-->
+<!--                android:layout_toRightOf="@+id/totalAmount"-->
+<!--                android:layout_below="@+id/supplier"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:textColor="#000"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:autoSizeTextType="uniform" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:text="100000"-->
+<!--                android:textSize="15dp"-->
+<!--                android:id="@+id/totalAmount"-->
+<!--                android:layout_toRightOf="@+id/image_view"-->
+<!--                android:layout_below="@+id/supplier"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:textColor="#000"-->
+<!--                android:autoSizeTextType="uniform" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:text="10000/Kg"-->
+<!--                android:textSize="15dp"-->
+<!--                android:id="@+id/unitPrice"-->
+<!--                android:layout_toRightOf="@+id/image_view"-->
+<!--                android:layout_below="@+id/totalAmount"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:textColor="#000"-->
+<!--                android:autoSizeTextType="uniform" />-->
+<!--            <Button-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:text="-"-->
+<!--                android:textSize="40dp"-->
+<!--                android:id="@+id/minusAmount"-->
+<!--                android:layout_toRightOf="@+id/image_view"-->
+<!--                android:layout_below="@+id/unitPrice"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:autoSizeTextType="uniform"-->
+<!--                android:textAlignment = "center"-->
+<!--                android:gravity = "center"/>-->
+<!--            <Button-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:text="+"-->
+<!--                android:textSize="40dp"-->
+<!--                android:id="@+id/addAmount"-->
+<!--                android:layout_toRightOf="@+id/minusAmount"-->
+<!--                android:layout_below="@+id/unitPrice"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:autoSizeTextType="uniform"-->
+<!--                android:textAlignment = "center"-->
+<!--                android:gravity = "center">-->
+<!--            </Button>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/delete"-->
+<!--                android:layout_width="90dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_alignParentEnd="true"-->
+
+<!--                android:layout_marginLeft="120dp"-->
+
+<!--                android:layout_marginEnd="13dp"-->
+<!--                android:autoSizeTextType="uniform"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Delete"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="40dp"></Button>-->
+
+<!--        </RelativeLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--</RelativeLayout>-->

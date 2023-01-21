@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".StartActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/logo9"
+        android:padding="30dp"
+        tools:ignore="MissingConstraints"
+        />
+    <Button
+        android:id="@+id/register"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:text="register"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_rounded"
+        app:layout_constraintEnd_toEndOf="@+id/registerRestaurant"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/registerRestaurant"
+        app:layout_constraintTop_toBottomOf="@+id/registerRestaurant"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/registerRestaurant"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/register"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_rounded"
+        android:text="Restaurant Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/register"
+        android:layout_marginTop="30dp"
+        android:text="login"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_rounded"
+        app:layout_constraintEnd_toEndOf="@+id/registerRestaurant"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/registerRestaurant"
+        app:layout_constraintTop_toBottomOf="@+id/register"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

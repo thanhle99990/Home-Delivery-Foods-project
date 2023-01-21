@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/text_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_amount"
+        android:layout_centerHorizontal="true"
+        android:hint="Input here"
+        android:textSize="20dp"
+        android:inputType="number"></EditText>
+    <Button
+        android:id="@+id/change_button"
+        android:layout_below="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_rounded2"
+        android:text="Change"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

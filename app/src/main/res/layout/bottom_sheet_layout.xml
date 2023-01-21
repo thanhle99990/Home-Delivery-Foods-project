@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/text_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/text_amount_cart_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_amount"
+        android:layout_centerHorizontal="true"
+        android:text="100"
+        android:textSize="30dp"></TextView>
+    <Button
+        android:id="@+id/minus_amount_cart_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/text_amount_cart_item"
+        android:layout_below="@+id/text_amount"
+        android:text="-"
+        android:background="@drawable/button_rounded2"
+        android:textSize="20dp"></Button>
+    <Button
+        android:id="@+id/plus_amount_cart_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_amount_cart_item"
+        android:layout_below="@+id/text_amount"
+        android:text="+"
+        android:background="@drawable/button_rounded2"
+        android:textSize="20dp"
+        >
+    </Button>
+    <Button
+        android:id="@+id/add_to_cart_button"
+        android:layout_below="@+id/text_amount_cart_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to cart"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/button_rounded2"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

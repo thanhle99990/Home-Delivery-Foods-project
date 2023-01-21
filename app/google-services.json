@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "617256062714",
+    "firebase_url": "https://home-delivery-food-57ca6.firebaseio.com",
+    "project_id": "home-delivery-food-57ca6",
+    "storage_bucket": "home-delivery-food-57ca6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617256062714:android:fb285ac535fe77aa1e0343",
+        "android_client_info": {
+          "package_name": "com.group.HomeDeliveryFood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "617256062714-uht8vpmnbbo3qd6h2dcv161ruapo9foq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.group.HomeDeliveryFood",
+            "certificate_hash": "9811aa1248738068468d7311539b15817907bbe8"
+          }
+        },
+        {
+          "client_id": "617256062714-c7br8msao0tparso0pnq9qgq9u9d9kfq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYBGXq4dr6kna2zs5v6IdtCRIGfc5LGl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "617256062714-c7br8msao0tparso0pnq9qgq9u9d9kfq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

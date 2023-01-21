@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/colorBackground"
+    android:paddingBottom="16dp"
+    tools:context=".AddFoodToMenuActivity">
+    <EditText
+        android:id="@+id/edit_text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textStyle="italic"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+
+
+    <EditText
+        android:id="@+id/edit_text_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:textStyle="italic"
+        android:inputType="textMultiLine"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/text_view_phoneNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="Phone number: 0902030202"
+        android:textStyle="italic"
+        android:layout_marginBottom="16dp"/>
+    <TextView
+        android:id="@+id/name_restaurant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="KFC"
+        android:background="@color/colorGreyButton"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/address_restaurant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="373 Nguyen Van Troi"
+        android:background="@color/colorGreyButton"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/name_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Ten san pham" />
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:id="@+id/number_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="So luong" />
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:id="@+id/price_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Don gia" />
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:id="@+id/totalPrice_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Tong tien" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linear_show_items">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorGreyButton"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Total bill" />
+        <TextView
+            android:layout_marginLeft="230dp"
+            android:id="@+id/totalBill_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Tong hoa don" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_rounded"
+        android:layout_marginTop="20dp"
+        android:text="Buy"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="1.0"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="16dp" />
+</LinearLayout>

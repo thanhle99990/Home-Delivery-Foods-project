@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddFoodToMenuActivity">
+    <EditText
+        android:id="@+id/edit_text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/edit_text_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+
+        android:inputType="textMultiLine" />
+    <EditText
+        android:id="@+id/edit_text_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Link url"
+        android:inputType="textMultiLine" />
+<!--    <EditText-->
+<!--        android:id="@+id/edit_text_category"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Category"-->
+<!--        android:inputType="textMultiLine" />-->
+    <EditText
+        android:id="@+id/edit_text_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:inputType="numberDecimal" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_category"
+        android:layout_marginTop="10dp"
+        ></Spinner>
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_rounded"
+        android:layout_marginTop="20dp"
+        android:text="Save data"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="1.0"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="16dp" />
+
+</LinearLayout>
